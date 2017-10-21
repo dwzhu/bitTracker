@@ -1,150 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Currency Watch</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<!-- <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script> -->
-	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway" rel="stylesheet">
-	
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-
-	<!--Import Google Icon Font-->
-  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <title>Currency Watch</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script> -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
+
 <body>
-
-	<!-- Navigation Bar -->
-	<div id="top" class="navbar-fixed">
-		<nav class="nav-extended">
-	    <div class="nav-wrapper">
-	      <a class="brand-logo center"> <h3> <strong> bitTracker+ </strong> </h3> </a>
-	    </div>
-			<div class="nav-content">
-	      <ul id="nav-mobile" class="right">
-					<li><a href="#top">Selection</a></li>
-	        <li><a href="#graph">Graph</a></li>
-	      </ul>
-	    </div>
-	  </nav>
-	</div>
-
-	<!-- Drop Down Selector for User Preference -->
-	<div class="pageOnefix">
-
-	<div id="page1">
-		<a id="#" class="smooth section scrollspy"></a>
-<br><br>
-	<div class="container">
-		<div class="input-field col s12 userSelect">
-	    <select name="choices" id="choices" multiple>
-	      <option id="" disabled selected> User Select</option>
-	      <option id="Bitcoin" value="Bitcoin">Bitcoin</option>
-          <option id="Ethereum" value="Ethereum">Ethereum</option>
-          <option id="Ripple" value="Ripple">Ripple</option>
-          <option id="NEM" value="NEM">NEM</option>
-          <option id="Litecoin" value="Litecoin">Litecoin</option>
-          <option id="Dash" value="Dash">Dash</option>
-          <option id="IOTA" value="IOTA">Iota</option>
-          <option id="Stratis" value="Stratis">Stratis</option>
-          <option id="Monero" value="Monero">Monero</option>
-          <option id="Waves" value="Waves">Waves</option>
-          <option id="BitConnect" value="BitConnect">BitConnect</option>
-          <option id="EOS" value="EOS">EOS</option>
-          <option id="BitShares" value="BitShares">BitShares</option>
-          <option id="Zcash" value="Zcash">Zcash</option>
-          <option id="TajCoin" value="TajCoin">TajCoin</option>
-          <option id="Steem" value="Steem">Steem</option>
-          <option id="Siacoin" value="Siacoin">Siacoin</option>
-          <option id="Iconomi" value="Iconomi">Iconomi</option>
-          <option id="Golem" value="Golem">Golem</option>
-          <option id="Bytecoin" value="Bytecoin">Bytecoin</option>
-          <option id="LanaCoin" value="LanaCoin">LanaCoin</option>
-          <option id="Augur" value="Augur">Augur</option>
-          <option id="Decredit" value="Decredit">Decredit</option>
-          <option id="Nekto-coin" value="Nekto-coin">Nekto-coin</option>
-          <option id="NevaCoin" value="NevaCoin">NevaCoin</option>
-          <option id="Suncontract" value="Suncontract">Suncontract</option>
-          <option id="Xaurum" value="Xaurum">Xaurum</option>
-	    </select>
-	  </div>
-	</div>
-
-	<!-- Container to populate choices from user -->
-
-	<div class="container inputAPI one">
-		<div class="row rowCurrency">
-			
-		</div>
-	</div>
-</div>
-
-
-	<div id="page2">
-		<a id="graph" class="smooth section scrollspy"></a>
-		<div class="container inputPage3 col s12">
-			<div class="widgetPlace responsive-img">
-				<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-				<script type="text/javascript">
-				new TradingView.widget({
-					"autosize": true,
-				  "symbol": "BTCUSD",
-				  "interval": "D",
-				  "timezone": "Etc/UTC",
-				  "theme": "Black",
-				  "style": "3",
-				  "locale": "en",
-				  "toolbar_bg": "#3f64ba",
-				  "enable_publishing": false,
-				  "allow_symbol_change": true,
-				  "hideideas": true
-				});
-				</script>
-				<!-- TradingView Widget BEGIN -->
-				<script src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js">{
-				 "symbols": [
-				   {
-				     "proName": "BTCUSD",
-				     "title": "Bitcoin"
-				   },
-				   {
-				     "proName": "ETHUSD",
-				     "title": "Ethereum"
-				   },
-				   {
-				     "proName": "FX_IDC:XAUUSD",
-				     "title": "Gold"
-				   },
-				   {
-				     "proName": "NYMEX:CL1!",
-				     "title": "Crude Oil"
-				   }
-				 ],
-				 "locale": "en"
-				}</script>
-<!-- TradingView Widget END -->
-			</div>
-		</div>
-	</div>
-
-	<footer class="page-footer">
-
-        Special thanks to Coin Market Cap API & Trading View<br> © 2017 Copyright 
-
-        
+    <!-- Navigation Bar -->
+    <div id="top" class="navbar-fixed">
+        <nav class="nav-extended">
+            <div class="nav-wrapper">
+                <a class="brand-logo center">
+                    <h3> <strong> bitTracker+ </strong> </h3> </a>
+            </div>
+            <div class="nav-content">
+                <ul id="nav-mobile" class="right">
+                    <li><a href="#top">Selection</a></li>
+                    <li><a href="#graph">Graph</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- Drop Down Selector for User Preference -->
+    <div class="pageOnefix">
+        <div id="page1">
+            <a id="#" class="smooth section scrollspy"></a>
+            <br>
+            <br>
+            <div class="container">
+                <div class="input-field col s12 userSelect">
+                    <select name="choices" id="choices" multiple>
+                        <option id="" disabled selected> User Select</option>
+                        <option id="Bitcoin" value="Bitcoin">Bitcoin</option>
+                        <option id="Ethereum" value="Ethereum">Ethereum</option>
+                        <option id="Ripple" value="Ripple">Ripple</option>
+                        <option id="NEM" value="NEM">NEM</option>
+                        <option id="Litecoin" value="Litecoin">Litecoin</option>
+                        <option id="Dash" value="Dash">Dash</option>
+                        <option id="IOTA" value="IOTA">Iota</option>
+                        <option id="Stratis" value="Stratis">Stratis</option>
+                        <option id="Monero" value="Monero">Monero</option>
+                        <option id="Waves" value="Waves">Waves</option>
+                        <option id="EOS" value="EOS">EOS</option>
+                        <option id="BitShares" value="BitShares">BitShares</option>
+                        <option id="Zcash" value="Zcash">Zcash</option>
+                        <option id="Steem" value="Steem">Steem</option>
+                        <option id="Siacoin" value="Siacoin">Siacoin</option>
+                        <option id="Golem" value="Golem">Golem</option>
+                        <option id="Augur" value="Augur">Augur</option>
+                        <option id="Stellar" value="Stellar">Stellar</option>
+                    </select>
+                </div>
+                <div class="container inputAPI one">
+                	<div class="row rowCurrency">
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer class="page-footer">
+        Special thanks to: <a style="font-size: 15px" href="https://api.coinmarketcap.com/v1/ticker/">Coinmarketcap API</a>
+        <br> © 2017 Copyright
     </footer>
-
-
-
-<!--Import jQuery before materialize.js-->
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="assets/javascript/logic.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
-
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="assets/javascript/logic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
 </body>
+
 </html>
