@@ -1,0 +1,228 @@
+html {
+	height: 100%;
+}
+
+h3, a, div {
+	text-shadow: 2px 2px 2px #000;
+	font-family: raleway;
+}
+
+.dropdown-content.select-dropdown.multiple-select-dropdown {
+	text-shadow: 0px 0px 0px white;
+}
+h3, a {
+	font-size: 38px;
+}
+
+input.select-dropdown {
+
+}
+
+body {
+	/*position: relative;*/
+	height: 100%;
+	background-image: url("../images/blockchain.jpg");
+	background-size:     cover;                      /* <------ */
+    background-position: center center;
+	display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+  }
+
+nav {
+	/*background-image: url("../images/esbuilding.jpg");*/
+	background-size: 999px 999px;
+	background-color: #1b54c7;
+	background-position: 30px;
+	padding: 10px;
+}
+
+.page-footer {
+	background-color: #1b54c7;
+	text-align: center;
+	height: 70px;
+	padding-bottom: 10px;
+}
+
+#green {
+	color: limegreen;
+}
+
+#red {
+	color: red;
+}
+
+nav.nav-extended, a.brand-logo.center  {
+/*background-color: #1b55c7*/;
+} 
+	
+
+.nav-content {
+	padding:20;
+}
+
+.container .select-wrapper input.select-dropdown {
+  border-bottom: 0px;
+	border: #082B6F 2px solid;
+	color: #082B6F;
+	border-radius: 15px;
+	background-color: rgba(239, 236, 236, 0.54);
+}
+
+.select-wrapper span.caret {
+ 	color: white;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 10px;
+  margin: auto 0;
+  margin-right: 10px;
+  font-size: 10px;
+  line-height: 10px;
+}
+
+.nav-wrapper {
+  /*background-color: #082B6F;*/
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+nav .brand-logo.center {
+	width: 100%;
+}
+
+.inputAPI {
+	/*border: 2px solid #082B6F;*/
+	text-align: center;
+	height: 80%;
+	overflow: auto;
+	border-radius: 15px;
+}
+
+.inputPage2{
+	/*border: 2px solid #082B6F;*/
+	text-align: center;
+	width: 70%;
+	height: 70%;
+	/*margin-top: 10%;*/
+}
+
+.inputPage3{
+	/*border: 2px solid #082B6F;*/
+	text-align: center;
+	width: 70%;
+	height: 70%;
+}
+
+.pageOnefix {
+	height: 100%;
+}
+
+
+
+.rowCurrency {
+	margin: 15px;
+	padding: 10px;
+	/*border: #082B6F 2px solid;*/
+	color: white;
+	background-color: rgba(24, 52, 136, 0.88);
+	border-radius: 15px;
+	font-size: 18px;
+	box-shadow: 5px 5px 5px rgba(16, 15, 15, 0.88);
+}
+
+.userCurrency {
+	text-align: center;
+/*	border: 2px solid;*/
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	border-radius: 15px;
+}
+
+
+.container .row {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.imgFix {
+	/*max-width: 65px;*/
+	text-align: center;
+	/*border: 2px solid white;*/
+	margin-top: 2px;
+	margin-bottom: 2px;
+	padding: 5px;
+}
+
+
+#page1 {
+	height: 100%;
+	margin-top: 30px;
+	/*background-color: yellow;*/
+}
+
+#page2 {
+	height: 60%;
+	margin-top: 30px;
+	/*padding-top: 15%;*/
+	/*overflow: hidden;*/
+	/*background-color: brown;*/
+}
+
+/*.pushDown {
+	padding-top: 10%;
+}*/
+
+.widgetPlace {
+	height: 88%;
+
+	/*padding-top: 15%*/
+}
+
+
+@media only screen and (max-width: 600px) {
+
+#page1, #page2, #page3 {
+	height: 100%;
+}
+
+
+.widgetPlace {
+	width: 100%;
+}
+
+.inputAPI {
+	/*border: 2px solid #082B6F;*/
+	text-align: center;
+	height: 70%;
+	overflow: auto;
+	border-radius: 15px;
+}
+
+#page2 {
+	height: 60%;
+	margin-top: 30px;
+	/*padding-top: 15%;*/
+	/*overflow: hidden;*/
+	/*background-color: brown;*/
+}
+
+.page-footer {
+	background-color: #1b54c7;
+	text-align: center;
+	height: 70px;
+	padding-bottom: 10px;
+	font-size: 10px;
+}
+
+.inputPage3 {
+    width: 90%;
+}
+}

@@ -1,1 +1,1 @@
-# bitTracker
+# Goldcoin
